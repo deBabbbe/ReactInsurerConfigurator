@@ -1,0 +1,126 @@
+.App-header {
+  background-color: #282c34;
+  height: 830px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 10px 50px 50px 50px;
+}
+
+.ApplicationBar {
+  font-size: 20px;
+  background-color: #55717f;
+  color: white;
+  padding: 10px;
+}
+
+.configBarIcon {
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.ActionBar {
+  font-size: 20px;
+  background-color: #293b51;
+  color: white;
+  padding: 10px;
+  user-select: none;
+}
+
+.ConfigBar {
+  float: left;
+  width: 40px;
+  background-color: #e4842b;
+}
+
+#saveButton,
+#addButton,
+#refreshButton,
+#wizardButton,
+#userIcon {
+  margin: 0 15px 0 0;
+  float: right;
+  color: white;
+}
+
+#userName {
+  margin: 3px 15px 0 0;
+  float: right;
+  color: white;
+  font-size: 16px;
+  min-width: 100px;
+  text-align: center;
+}
+
+#applicationBarVersion {
+  color: white;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+#applicationBarDefaultIcon {
+  margin: 5px 15px 0 0;
+  float: right;
+  color: white;
+  font-size: 16px;
+}
+
+#removeButton {
+  color: grey;
+}
+
+table {
+  width: 100%;
+  margin: 10px 0;
+}
+
+td {
+  width: 100%;
+  padding-right: 10px;
+  vertical-align: center;
+}
+
+select {
+  width: 100%;
+  padding-right: 10px;
+  text-align-last: center;
+}
+
+#configFile {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: black;
+  background: grey;
+}
+
+#searchBar {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.entryTag {
+  min-width: 230px;
+}
+
+.ConfigBarSplitter {
+  width: 40px;
+  border-bottom: 4px solid black;
+  position: absolute;
+  border-color: white;
+}
+
+.ConfigBarFiller {
+  height: 700px;
+  background-color: #293b51;
+}
+
+.LogoutPage {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+}

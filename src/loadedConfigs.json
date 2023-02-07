@@ -1,0 +1,131 @@
+[
+  {
+    "fileName": "web.config",
+    "configs": [
+      {
+        "config": "Common.Imap.Username",
+        "type": "string",
+        "value": "Schorsch"
+      },
+      {
+        "config": "Common.Imap.Password",
+        "type": "string",
+        "value": "*****"
+      },
+      {
+        "config": "Common.Imap.Url",
+        "type": "string",
+        "value": "[PLEASE FILL VALUE]"
+      },
+      {
+        "config": "Common.Imap.UseSsl",
+        "type": "bool",
+        "value": "true"
+      },
+      {
+        "config": "Common.Send.Timeout",
+        "type": "DateTime",
+        "value": "2022-01-18T23:35:27"
+      },
+      {
+        "config": "Common.Imap.Glubsch",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "fileName": "EmailImporter.exe.config",
+    "configs": [
+      {
+        "config": "EmailImporter.Imap.Username",
+        "type": "string"
+      },
+      {
+        "config": "EmailImporter.Imap.Password",
+        "type": "string"
+      },
+      {
+        "config": "EmailImporter.Imap.UseSsl",
+        "type": "bool",
+        "value": "false"
+      },
+      {
+        "config": "EmailImporter.Imap.Url",
+        "type": "string",
+        "value": "[PLEASE FILL VALUE]"
+      },
+      {
+        "config": "EmailImporter.Importer.ImportTime",
+        "type": "DateTime"
+      }
+    ]
+  },
+  {
+    "fileName": "SmoopeImporter.exe.config",
+    "configs": [
+      {
+        "config": "SmoopeImporter.Imap.Username",
+        "type": "string"
+      },
+      {
+        "config": "SmoopeImporter.Imap.Password",
+        "type": "string"
+      },
+      {
+        "config": "SmoopeImporter.Url",
+        "type": "bool"
+      }
+    ]
+  },
+  {
+    "fileName": "SkypeImporter.exe.config",
+    "configs": [
+      {
+        "config": "SkypeImporter.Imap.Username",
+        "type": "string"
+      },
+      {
+        "config": "SkypeImporter.Imap.Password",
+        "type": "string"
+      },
+      {
+        "config": "SkypeImporter.Url",
+        "type": "bool"
+      }
+    ]
+  },
+  {
+    "fileName": "WhatsAppImporter.exe.config",
+    "configs": [
+      {
+        "config": "WhatsAppImporter.Username",
+        "type": "string"
+      },
+      {
+        "config": "WhatsAppImporter.Password",
+        "type": "string"
+      },
+      {
+        "config": "WhatsAppImporter.Url",
+        "type": "bool"
+      }
+    ]
+  },
+  {
+    "fileName": "SmartMessengerImporter.exe.config",
+    "configs": [
+      {
+        "config": "SmartMessengerImporter.Username",
+        "type": "string"
+      },
+      {
+        "config": "SmartMessengerImporter.Password",
+        "type": "string"
+      },
+      {
+        "config": "SmartMessengerImporter.Url",
+        "type": "bool"
+      }
+    ]
+  }
+]

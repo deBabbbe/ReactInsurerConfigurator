@@ -1,0 +1,149 @@
+.App-header {
+  background-color: #282c34;
+  height: 830px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 10px 5px 0px 45px;
+}
+
+.ApplicationBar {
+  font-size: 20px;
+  background-color: #55717f;
+  color: white;
+  padding: 10px;
+}
+
+.configBarIcon {
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.ActionBar {
+  font-size: 20px;
+  background-color: #293b51;
+  color: white;
+  padding: 10px;
+  user-select: none;
+}
+
+select {
+  width: 100%;
+}
+
+.ConfigBar {
+  float: left;
+  width: 40px;
+  background-color: #e4842b;
+}
+
+.fa-lg:hover {
+  color: darkgrey;
+}
+
+.fa-lg:active {
+  color: grey;
+}
+
+#saveButton,
+#addButton,
+#refreshButton,
+#wizardButton,
+#uploadButton,
+#userIcon,
+#hideButton {
+  margin: 0 15px 0 0;
+  float: right;
+  color: white;
+}
+
+#hideButton .hidden {
+  color: grey;
+}
+
+#userName {
+  margin: 3px 15px 0 0;
+  float: right;
+  color: white;
+  font-size: 16px;
+  min-width: 100px;
+  text-align: center;
+}
+
+#applicationBarVersion {
+  color: white;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+#applicationBarDefaultIcon {
+  margin: 5px 15px 0 0;
+  float: right;
+  color: white;
+  font-size: 16px;
+}
+
+#removeButton {
+  color: grey;
+}
+
+table {
+  width: 100%;
+  margin: 10px 0;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+td {
+  width: 100%;
+  padding-right: 10px;
+  vertical-align: center;
+}
+
+tr.fill_value {
+  border: 2pt solid red;
+}
+
+#remove-button-table,
+#table-type {
+  width: 20px;
+}
+
+#table-type-selector {
+  width: 80px;
+}
+
+#configFile {
+  width: 100%;
+  text-align-last: center;
+
+  font-size: 20px;
+  color: black;
+}
+
+#configFileEntry {
+  text-align-last: left;
+  margin-right: 20px;
+  color: red;
+}
+
+#searchBar {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ConfigBarFiller {
+  height: 700px;
+  background-color: #293b51;
+}
+
+.LogoutPage {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+}
