@@ -1,5 +1,5 @@
 .App-header {
-  background-color: #282c34;
+  background-color: lightgrey;
   height: 830px;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -8,8 +8,8 @@
 
 .ApplicationBar {
   font-size: 20px;
-  background-color: #55717f;
   color: white;
+  background-color: #e4e4e4;
   padding: 10px;
 }
 
@@ -18,22 +18,14 @@
   margin-top: 3px;
 }
 
-.ActionBar {
-  font-size: 20px;
-  background-color: #293b51;
-  color: white;
-  padding: 10px;
-  user-select: none;
-}
-
 select {
   width: 100%;
 }
 
 .ConfigBar {
   float: left;
-  width: 40px;
-  background-color: #e4842b;
+  width: 60px;
+  background-color: #35a4d9;
 }
 
 .fa-lg:hover {
@@ -76,9 +68,9 @@ select {
 }
 
 #applicationBarDefaultIcon {
-  margin: 5px 15px 0 0;
+  margin: 5px 25px 0 0;
   float: right;
-  color: white;
+  color: #666;
   font-size: 16px;
 }
 
@@ -139,7 +131,7 @@ input {
 
 .ConfigBarFiller {
   height: 700px;
-  background-color: #293b51;
+  background-color: #35a4d9;
 }
 
 .LogoutPage {

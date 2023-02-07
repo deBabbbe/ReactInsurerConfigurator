@@ -1,16 +1,14 @@
-import { v4 as uuid } from "uuid";
+import produce from "immer";
 import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { v4 as uuid } from "uuid";
 import { ConfigEntry, FileConfigEntry } from "../DataTypes/ConfigEntries";
 import { Constants } from "../DataTypes/Constants";
 import { ApplicationBar } from "./ApplicationBar";
-import { ActionBar } from "./ActionBar";
 import { ConfigBar } from "./ConfigBar";
-import { LogoutPage } from "./LogoutPage";
 import ConfigFileSelector from "./ConfigFileSelector";
-import SearchBar from "./SearchBar";
 import Entries from "./Entries";
-import FileSaver from "file-saver";
-import produce from "immer";
+import { LogoutPage } from "./LogoutPage";
+import SearchBar from "./SearchBar";
 
 interface ConfiguratorProps {
   loadedConfigs: FileConfigEntry[];
@@ -18,8 +16,7 @@ interface ConfiguratorProps {
   setReloadSettings: Dispatch<SetStateAction<string>>;
 }
 
-const getDataOfCurrentConfigMapped = (configs: ConfigEntry[]): typeof configs =>
-  configs.map((entry) => Object.assign(entry, { key: uuid() }));
+const getDataOfCurrentConfigMapped = (configs: ConfigEntry[]): typeof configs => configs.map((entry) => Object.assign(entry, { key: uuid() }));
 
 export default function Configurator(props: ConfiguratorProps) {
   const [typeHidden, setTypeHidden] = useState(false);
@@ -52,7 +49,7 @@ export default function Configurator(props: ConfiguratorProps) {
   const getIndexOfCurrentConfigFile = (props: ConfiguratorProps, configFileName: string) => {
     const configToChange = props.loadedConfigs.filter((c) => c.fileName === configFileName)[0] || null;
     return props.loadedConfigs.indexOf(configToChange);
-  }
+  };
 
   const addEntry = () => {
     const newData = produce(dataOfCurrentConfig, (draft) => {
@@ -85,13 +82,6 @@ export default function Configurator(props: ConfiguratorProps) {
     props.loadedConfigs[index].configs = data;
   };
 
-  const save = () => {
-    const blob = new Blob([JSON.stringify(props.loadedConfigs)], {
-      type: "application/json",
-    });
-    FileSaver.saveAs(blob, "config.json", { autoBom: false });
-  };
-
   const logout = () => {
     setLoggedOut(!loggedOut);
   };
@@ -114,15 +104,6 @@ export default function Configurator(props: ConfiguratorProps) {
   return (
     <div className="App">
       <ApplicationBar loggedOut={loggedOut} logout={logout} />
-      <ActionBar
-        loggedOut={loggedOut}
-        addEntry={addEntry}
-        save={save}
-        typeHidden={typeHidden}
-        setTypeHidden={setTypeHidden}
-        setLoadedConfigs={props.setLoadedConfigs}
-        setReloadSettings={props.setReloadSettings}
-      />
       <ConfigBar configFiles={props.loadedConfigs.map((c) => c.fileName)} configFileChanged={setConfigFileChanged} />
       {loggedOut && <LogoutPage></LogoutPage>}
       <header className="App-header" hidden={loggedOut}>
